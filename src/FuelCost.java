@@ -60,5 +60,6 @@ public class FuelCost
 
         distance = gallonsInTank * milesPerGallon;
         System.out.println("Your car can go " + distance + " miles with a full tank of gas.");
+
     }
 }
