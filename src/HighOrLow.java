@@ -22,7 +22,7 @@ public class HighOrLow
             } else {
                 trash = in.next();
                 System.out.println(trash + " is not a valid number!");
-                System.out.println("Please enter a number between 1-10.");
+                System.out.println("\nPlease enter a number between 1-10.");
             }
         } while (!done);
 
@@ -31,7 +31,8 @@ public class HighOrLow
             System.out.println("Good Job! You guessed the correct number!");
         } else if (guess > value) {
             System.out.println("Your guess was too high!");
-        } else
+        } else {
             System.out.println("Your guess was too low!");
+        }
     }
 }

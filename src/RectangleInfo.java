@@ -8,7 +8,7 @@ public class RectangleInfo
         double height = 0;
         double area = 0;
         double perimeter = 0;
-        double diagnol = 0;
+        double diagonal = 0;
         String trash = "";
         boolean done = false;
 
@@ -20,7 +20,7 @@ public class RectangleInfo
             } else {
                 trash = in.next(); // use next() instead of nextLine()
                 System.out.println("Invalid input, " + trash + " is not a valid number");
-                System.out.println("Please try again");
+                System.out.println("\nPlease try again");
             }
         } while(!done);
 
@@ -34,16 +34,16 @@ public class RectangleInfo
             } else {
                 trash = in.next(); // use next() instead of nextLine()
                 System.out.println("Invalid input, " + trash + " is not a valid number");
-                System.out.println("Please try again");
+                System.out.println("\nPlease try again");
             }
         } while(!done);
 
         area = (width * height);
         perimeter = (2 * (width + height));
-        diagnol = Math.sqrt(Math.pow(width,2) + (Math.pow(height, 2)));
+        diagonal = Math.sqrt(Math.pow(width,2) + (Math.pow(height, 2)));
         System.out.println("The area of the rectangle is " + area);
         System.out.println("The perimeter of the rectangle is " + perimeter);
-        System.out.println("The diagonal of the rectangle is " + diagnol);
+        System.out.println("The diagonal of the rectangle is " + diagonal);
 
     }
 }

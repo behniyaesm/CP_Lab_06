@@ -21,7 +21,7 @@ public class FuelCost
                 gallonsInTank = sc.nextDouble();
                 done = true;
             } else {
-                trash = sc.next();
+                trash = sc.nextLine();
                 System.out.println("\nYou said your car can hold " + trash + " gallons of gas.");
                 System.out.println("You have to enter a valid amount!");
             }

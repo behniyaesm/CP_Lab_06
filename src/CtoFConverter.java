@@ -15,9 +15,9 @@ public class CtoFConverter
                 tempC = sc.nextDouble();
                 done = true;
             } else {
-                trash = sc.next();
+                trash = sc.nextLine();
                 System.out.println(trash + " is not a valid temperature");
-                System.out.println("Please enter a valid temperature");
+                System.out.println("\nPlease enter a valid temperature");
             }
         } while (!done);
 
